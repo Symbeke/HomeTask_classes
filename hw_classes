@@ -1,0 +1,17 @@
+function Car(model, color, year) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+}
+
+const car1 = new Car("Mercedes", "Blue", "2020");
+const car2 = new Car("Audi"," Black ","2016")
+
+Car.prototype.engineStart = function(){
+    console.log(`${this.color} ${this.model} ${this.year} engine started`);
+}
+Car.prototype.engineStop = function (){
+    console.log(`${this.color} ${this.model} ${this.year} engine stopped`)
+}
+
+car2.engineStart();
